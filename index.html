@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff4d00" />
+    <title>Crazy Fitness Gym — Train Insane. Or Remain The Same.</title>
+    <meta
+      name="description"
+      content="Crazy Fitness Gym is a premium strength & conditioning gym with elite equipment, certified coaches, and a recovery spa. Book your free trial today."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- No-flash theme bootstrap: sets [data-theme] before first paint -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("cfg-theme");
+          var system = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+          var theme = stored === "light" || stored === "dark" ? stored : system;
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
